@@ -13,7 +13,7 @@ registerButton.addEventListener("click", async () => {
     await registerSW();
     location.reload();
   } catch (err) {
-    error.textContent = "Failed to register service worker.";
+    error.textContent = "Failed to register service worker. If you are reading this, go back to the original venom proxy site you were using and try again.";
     errorCode.textContent = err.toString();
     registerButton.classList.remove("show");
   }
