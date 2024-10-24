@@ -11,6 +11,16 @@ body {
   overflow: hidden;
 }
 
+/* Bumpy sea animation */
+@keyframes wave {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px; /* Adjust this value for desired wave movement */
+  }
+}
+
 .bumpy-sea {
   position: absolute;
   bottom: 0;
@@ -20,9 +30,11 @@ body {
   background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDUwIiBmaWxsPSIjMDA5OGU5Ij48cGF0aCBkPSJNIDAgNDhDMTAwIDMxIDE5OCAyMiAzMDAgMjJTMzkwIDMxIDUwMCA0OEM1ODAgMzMgNjcwIDIyIDc1MCAyMnMxMjAgMSAxODAgMjZWMCAwIDAgMFY0NkgwTCAweiIgZmlsbD0iIzE5OTZGRiIvPjwvc3ZnPg==');
   background-repeat: repeat-x;
   background-size: cover;
+  animation: wave 5s infinite linear; /* Added wave animation */
   z-index: 1;
 }
 
+/* Other styles */
 .fa-magnifying-glass {
   color: white;
 }
