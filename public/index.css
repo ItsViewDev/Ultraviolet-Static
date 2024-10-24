@@ -32,7 +32,8 @@ body {
   height: 200px;
   background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDUwIiBmaWxsPSIjMDA5OGU5Ij48cGF0aCBkPSJNIDAgNDhDMTAwIDMxIDE5OCAyMiAzMDAgMjJTMzkwIDMxIDUwMCA0OEM1ODAgMzMgNjcwIDIyIDc1MCAyMnMxMjAgMSAxODAgMjZWMCAwIDAgMFY0NkgwTCAweiIgZmlsbD0iIzE5OTZGRiIvPjwvc3ZnPg==');
   background-repeat: repeat-x;
-  background-size: cover;
+  /* Remove background-size: cover; */
+  background-size: contain;
   animation: wave 3s infinite linear; /* Updated animation duration */
   z-index: 1;
 }
